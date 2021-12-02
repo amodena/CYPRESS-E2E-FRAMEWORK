@@ -1,5 +1,5 @@
 const { after } = require("lodash");
-import amazonPrimeVideo from '../../pages/amazonPrimeVideo';
+import amazonPrimeVideo from '../pages/amazonPrimeVideo';
 
 describe('startSessionPageTest', function() {
 
