@@ -1,6 +1,17 @@
 const { after } = require("lodash");
 import amazonPrimeVideo from '../pages/amazonPrimeVideo';
 
+describe('validarTituloTest', function() {
+
+    before(function(){          
+        cy.visit('https://www.primevideo.com/')
+      })
+    it('Ir al login', function() {
+        cy.title().should('eq','Bienvenido a Prime Video')
+        cy.wait(2000)
+    })
+})
+
 describe('startSessionPageTest', function() {
 
     before(function(){          
